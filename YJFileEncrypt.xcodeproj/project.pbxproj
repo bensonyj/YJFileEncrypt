@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C62470FA1DBF390800DA0E6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C62470F91DBF390800DA0E6F /* AppDelegate.m */; };
+		C62470FD1DBF390800DA0E6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C62470FC1DBF390800DA0E6F /* main.m */; };
+		C62471001DBF390800DA0E6F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62470FF1DBF390800DA0E6F /* ViewController.m */; };
+		C62471021DBF390800DA0E6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C62471011DBF390800DA0E6F /* Assets.xcassets */; };
+		C62471051DBF390800DA0E6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C62471031DBF390800DA0E6F /* Main.storyboard */; };
+		C62471101DBF390800DA0E6F /* YJFileEncryptTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C624710F1DBF390800DA0E6F /* YJFileEncryptTests.m */; };
+		C624711B1DBF390800DA0E6F /* YJFileEncryptUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C624711A1DBF390800DA0E6F /* YJFileEncryptUITests.m */; };
+		C624712F1DBF455700DA0E6F /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = C624712C1DBF455700DA0E6F /* NSData+AES.m */; };
+		C62471301DBF455700DA0E6F /* NSString+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = C624712E1DBF455700DA0E6F /* NSString+AES.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C624710C1DBF390800DA0E6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C62470ED1DBF390800DA0E6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C62470F41DBF390800DA0E6F;
+			remoteInfo = YJFileEncrypt;
+		};
+		C62471171DBF390800DA0E6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C62470ED1DBF390800DA0E6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C62470F41DBF390800DA0E6F;
+			remoteInfo = YJFileEncrypt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C62470F51DBF390800DA0E6F /* YJFileEncrypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJFileEncrypt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C62470F81DBF390800DA0E6F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C62470F91DBF390800DA0E6F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C62470FC1DBF390800DA0E6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C62470FE1DBF390800DA0E6F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C62470FF1DBF390800DA0E6F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C62471011DBF390800DA0E6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C62471041DBF390800DA0E6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C62471061DBF390800DA0E6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C624710B1DBF390800DA0E6F /* YJFileEncryptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YJFileEncryptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C624710F1DBF390800DA0E6F /* YJFileEncryptTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJFileEncryptTests.m; sourceTree = "<group>"; };
+		C62471111DBF390800DA0E6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C62471161DBF390800DA0E6F /* YJFileEncryptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YJFileEncryptUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C624711A1DBF390800DA0E6F /* YJFileEncryptUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJFileEncryptUITests.m; sourceTree = "<group>"; };
+		C624711C1DBF390800DA0E6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C624712B1DBF455700DA0E6F /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = "<group>"; };
+		C624712C1DBF455700DA0E6F /* NSData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = "<group>"; };
+		C624712D1DBF455700DA0E6F /* NSString+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AES.h"; sourceTree = "<group>"; };
+		C624712E1DBF455700DA0E6F /* NSString+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AES.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C62470F21DBF390800DA0E6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C62471081DBF390800DA0E6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C62471131DBF390800DA0E6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C62470EC1DBF390800DA0E6F = {
+			isa = PBXGroup;
+			children = (
+				C62470F71DBF390800DA0E6F /* YJFileEncrypt */,
+				C624710E1DBF390800DA0E6F /* YJFileEncryptTests */,
+				C62471191DBF390800DA0E6F /* YJFileEncryptUITests */,
+				C62470F61DBF390800DA0E6F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C62470F61DBF390800DA0E6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C62470F51DBF390800DA0E6F /* YJFileEncrypt.app */,
+				C624710B1DBF390800DA0E6F /* YJFileEncryptTests.xctest */,
+				C62471161DBF390800DA0E6F /* YJFileEncryptUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C62470F71DBF390800DA0E6F /* YJFileEncrypt */ = {
+			isa = PBXGroup;
+			children = (
+				C62470F81DBF390800DA0E6F /* AppDelegate.h */,
+				C62470F91DBF390800DA0E6F /* AppDelegate.m */,
+				C62470FE1DBF390800DA0E6F /* ViewController.h */,
+				C62470FF1DBF390800DA0E6F /* ViewController.m */,
+				C62471011DBF390800DA0E6F /* Assets.xcassets */,
+				C62471031DBF390800DA0E6F /* Main.storyboard */,
+				C62471061DBF390800DA0E6F /* Info.plist */,
+				C624712A1DBF455700DA0E6F /* AES */,
+				C62470FB1DBF390800DA0E6F /* Supporting Files */,
+			);
+			path = YJFileEncrypt;
+			sourceTree = "<group>";
+		};
+		C62470FB1DBF390800DA0E6F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C62470FC1DBF390800DA0E6F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C624710E1DBF390800DA0E6F /* YJFileEncryptTests */ = {
+			isa = PBXGroup;
+			children = (
+				C624710F1DBF390800DA0E6F /* YJFileEncryptTests.m */,
+				C62471111DBF390800DA0E6F /* Info.plist */,
+			);
+			path = YJFileEncryptTests;
+			sourceTree = "<group>";
+		};
+		C62471191DBF390800DA0E6F /* YJFileEncryptUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C624711A1DBF390800DA0E6F /* YJFileEncryptUITests.m */,
+				C624711C1DBF390800DA0E6F /* Info.plist */,
+			);
+			path = YJFileEncryptUITests;
+			sourceTree = "<group>";
+		};
+		C624712A1DBF455700DA0E6F /* AES */ = {
+			isa = PBXGroup;
+			children = (
+				C624712B1DBF455700DA0E6F /* NSData+AES.h */,
+				C624712C1DBF455700DA0E6F /* NSData+AES.m */,
+				C624712D1DBF455700DA0E6F /* NSString+AES.h */,
+				C624712E1DBF455700DA0E6F /* NSString+AES.m */,
+			);
+			path = AES;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C62470F41DBF390800DA0E6F /* YJFileEncrypt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C624711F1DBF390800DA0E6F /* Build configuration list for PBXNativeTarget "YJFileEncrypt" */;
+			buildPhases = (
+				C62470F11DBF390800DA0E6F /* Sources */,
+				C62470F21DBF390800DA0E6F /* Frameworks */,
+				C62470F31DBF390800DA0E6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YJFileEncrypt;
+			productName = YJFileEncrypt;
+			productReference = C62470F51DBF390800DA0E6F /* YJFileEncrypt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C624710A1DBF390800DA0E6F /* YJFileEncryptTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C62471221DBF390800DA0E6F /* Build configuration list for PBXNativeTarget "YJFileEncryptTests" */;
+			buildPhases = (
+				C62471071DBF390800DA0E6F /* Sources */,
+				C62471081DBF390800DA0E6F /* Frameworks */,
+				C62471091DBF390800DA0E6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C624710D1DBF390800DA0E6F /* PBXTargetDependency */,
+			);
+			name = YJFileEncryptTests;
+			productName = YJFileEncryptTests;
+			productReference = C624710B1DBF390800DA0E6F /* YJFileEncryptTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C62471151DBF390800DA0E6F /* YJFileEncryptUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C62471251DBF390800DA0E6F /* Build configuration list for PBXNativeTarget "YJFileEncryptUITests" */;
+			buildPhases = (
+				C62471121DBF390800DA0E6F /* Sources */,
+				C62471131DBF390800DA0E6F /* Frameworks */,
+				C62471141DBF390800DA0E6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C62471181DBF390800DA0E6F /* PBXTargetDependency */,
+			);
+			name = YJFileEncryptUITests;
+			productName = YJFileEncryptUITests;
+			productReference = C62471161DBF390800DA0E6F /* YJFileEncryptUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C62470ED1DBF390800DA0E6F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = yingjian;
+				TargetAttributes = {
+					C62470F41DBF390800DA0E6F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					C624710A1DBF390800DA0E6F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C62470F41DBF390800DA0E6F;
+					};
+					C62471151DBF390800DA0E6F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C62470F41DBF390800DA0E6F;
+					};
+				};
+			};
+			buildConfigurationList = C62470F01DBF390800DA0E6F /* Build configuration list for PBXProject "YJFileEncrypt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C62470EC1DBF390800DA0E6F;
+			productRefGroup = C62470F61DBF390800DA0E6F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C62470F41DBF390800DA0E6F /* YJFileEncrypt */,
+				C624710A1DBF390800DA0E6F /* YJFileEncryptTests */,
+				C62471151DBF390800DA0E6F /* YJFileEncryptUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C62470F31DBF390800DA0E6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C62471021DBF390800DA0E6F /* Assets.xcassets in Resources */,
+				C62471051DBF390800DA0E6F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C62471091DBF390800DA0E6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C62471141DBF390800DA0E6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C62470F11DBF390800DA0E6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C62471001DBF390800DA0E6F /* ViewController.m in Sources */,
+				C62470FD1DBF390800DA0E6F /* main.m in Sources */,
+				C62471301DBF455700DA0E6F /* NSString+AES.m in Sources */,
+				C624712F1DBF455700DA0E6F /* NSData+AES.m in Sources */,
+				C62470FA1DBF390800DA0E6F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C62471071DBF390800DA0E6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C62471101DBF390800DA0E6F /* YJFileEncryptTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C62471121DBF390800DA0E6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C624711B1DBF390800DA0E6F /* YJFileEncryptUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C624710D1DBF390800DA0E6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C62470F41DBF390800DA0E6F /* YJFileEncrypt */;
+			targetProxy = C624710C1DBF390800DA0E6F /* PBXContainerItemProxy */;
+		};
+		C62471181DBF390800DA0E6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C62470F41DBF390800DA0E6F /* YJFileEncrypt */;
+			targetProxy = C62471171DBF390800DA0E6F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C62471031DBF390800DA0E6F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C62471041DBF390800DA0E6F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C624711D1DBF390800DA0E6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C624711E1DBF390800DA0E6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C62471201DBF390800DA0E6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = YJFileEncrypt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yj.YJFileEncrypt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C62471211DBF390800DA0E6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = YJFileEncrypt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yj.YJFileEncrypt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C62471231DBF390800DA0E6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = YJFileEncryptTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yj.YJFileEncryptTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YJFileEncrypt.app/Contents/MacOS/YJFileEncrypt";
+			};
+			name = Debug;
+		};
+		C62471241DBF390800DA0E6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = YJFileEncryptTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yj.YJFileEncryptTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YJFileEncrypt.app/Contents/MacOS/YJFileEncrypt";
+			};
+			name = Release;
+		};
+		C62471261DBF390800DA0E6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = YJFileEncryptUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yj.YJFileEncryptUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YJFileEncrypt;
+			};
+			name = Debug;
+		};
+		C62471271DBF390800DA0E6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = YJFileEncryptUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yj.YJFileEncryptUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YJFileEncrypt;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C62470F01DBF390800DA0E6F /* Build configuration list for PBXProject "YJFileEncrypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C624711D1DBF390800DA0E6F /* Debug */,
+				C624711E1DBF390800DA0E6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C624711F1DBF390800DA0E6F /* Build configuration list for PBXNativeTarget "YJFileEncrypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C62471201DBF390800DA0E6F /* Debug */,
+				C62471211DBF390800DA0E6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C62471221DBF390800DA0E6F /* Build configuration list for PBXNativeTarget "YJFileEncryptTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C62471231DBF390800DA0E6F /* Debug */,
+				C62471241DBF390800DA0E6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C62471251DBF390800DA0E6F /* Build configuration list for PBXNativeTarget "YJFileEncryptUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C62471261DBF390800DA0E6F /* Debug */,
+				C62471271DBF390800DA0E6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C62470ED1DBF390800DA0E6F /* Project object */;
+}
