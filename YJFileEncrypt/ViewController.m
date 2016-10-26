@@ -49,8 +49,8 @@
     [oPanel setCanChooseDirectories:YES];
     //不能打开文件
     [oPanel setCanChooseFiles:YES];
-    //起始目录为user
-    [oPanel setDirectoryURL:[NSURL URLWithString:NSUserName()]];
+    //起始目录
+    [oPanel setDirectoryURL:[NSURL URLWithString:NSHomeDirectory()]];
     //允许选择的文件类型，如果都可以的话，就写nil
     [oPanel setAllowedFileTypes:self.fileTpyes];
 }
@@ -165,7 +165,15 @@
 
 - (void)tableView:(NSTableView *)tableView setObjectValue:(id)object forTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
 {
-    [self.fileTpyes replaceObjectAtIndex:row withObject:object];
+    if ([(NSString *)object isEqualToString:@""]) {
+        [tableView beginUpdates];
+        [tableView removeRowsAtIndexes:[NSIndexSet indexSetWithIndex:row] withAnimation:NSTableViewAnimationSlideUp];
+        [self.fileTpyes removeObjectAtIndex:row];
+        [tableView endUpdates];
+    }else{
+        [self.fileTpyes replaceObjectAtIndex:row withObject:object];
+    }
+    [oPanel setAllowedFileTypes:self.fileTpyes];
 }
 
 #pragma mark - lazy
